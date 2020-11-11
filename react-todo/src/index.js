@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="App">
       <Typography component="h1" variant="h2">
-        代辦事項1
+        代辦事項
       </Typography>
       <TodoForm  saveTodo ={(todoText)=>{
         const trimmedText = todoText.trim();
