@@ -17,7 +17,7 @@ const App = () => {
       <TodoForm  saveTodo ={todoText=>{
         const trimmedText = todoText.trim();
         if(trimmedText.length >0){
-          addTodo([trimmedText]);
+          addTodo(trimmedText);
         }
       }} />
       <TodoList todos={todos} deleteTodo ={deleteTodo} />
