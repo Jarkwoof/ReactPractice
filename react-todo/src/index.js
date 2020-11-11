@@ -14,10 +14,10 @@ const App = () => {
       <Typography component="h1" variant="h2">
         代辦事項
       </Typography>
-      <TodoForm  saveTodo ={(todoText)=>{
+      <TodoForm  saveTodo ={todoText=>{
         const trimmedText = todoText.trim();
         if(trimmedText.length >0){
-          addTodo([...todos,trimmedText]);
+          addTodo([trimmedText]);
         }
       }} />
       <TodoList todos={todos} deleteTodo ={deleteTodo} />

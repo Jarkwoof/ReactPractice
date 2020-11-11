@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default (initialValue) =>{
-    const[value,setValue] = useState(initialValue);
+export default () =>{
+    const[value,setValue] = useState('');
 
     return{
         value,
